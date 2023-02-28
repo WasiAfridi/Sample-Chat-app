@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/theme_color_8"
+    tools:context=".SignUpActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/setProfileImage"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_user_account_24"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registeration"
+        android:textColor="@color/theme_color"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:padding="10dp"
+        android:layout_marginBottom="30dp"
+        />
+    <EditText
+        android:id="@+id/txtSignUpName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:hint=" Name"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:textColorHint="@color/black"
+        android:paddingStart="15dp"
+        android:paddingEnd="0dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_text_shape"
+        />
+
+    <EditText
+        android:id="@+id/txtSignUpEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:hint=" Email Address"
+        android:maxLines="1"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/black"
+        android:paddingStart="15dp"
+        android:paddingEnd="0dp"
+        android:textSize="16sp"
+        android:background="@drawable/edit_text_shape"
+        android:layout_marginBottom="10dp"/>
+    <EditText
+        android:id="@+id/txtSignUpPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:hint=" Password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:textColorHint="@color/black"
+        android:paddingStart="15dp"
+        android:paddingEnd="0dp"
+        android:textSize="16sp"
+        android:background="@drawable/edit_text_shape"
+        android:layout_marginBottom="10dp"/>
+<!--    <EditText-->
+<!--        android:id="@+id/txtConfirmPassword"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginStart="15dp"-->
+<!--        android:layout_marginEnd="15dp"-->
+<!--        android:hint=" Confirm Password"-->
+<!--        android:maxLines="1"-->
+<!--        android:textColorHint="@color/black"-->
+<!--        android:paddingStart="15dp"-->
+<!--        android:paddingEnd="0dp"-->
+<!--        android:textSize="16sp"-->
+<!--        android:background="@drawable/edit_text_shape"-->
+<!--        android:layout_marginBottom="10dp"/>-->
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="30dp"
+        android:text="Sign up"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_shape"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already Have Accunt? To LOGIN"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/btnClickHere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click Here"
+            android:textColor="#0000FF"
+            android:layout_marginStart="@dimen/_8sdp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
